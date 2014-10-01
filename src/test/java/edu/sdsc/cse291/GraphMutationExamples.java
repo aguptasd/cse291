@@ -25,9 +25,10 @@ public class GraphMutationExamples extends BaseTest {
   public void addLabel() {
     System.out.println("********\n* Adding labels \n********");
     try (Transaction tx = graphDb.beginTx()) {
-      for (Node node: GlobalGraphOperations.at(graphDb).getAllNodes()) {
-        if (node.hasRelationship(Direction.OUTGOING, DynamicRelationshipType.withName("hasExpertise"))) {
-          System.out.println("Adding PERSON label to " + (String)node.getProperty("name"));
+      for (Node node : GlobalGraphOperations.at(graphDb).getAllNodes()) {
+        if (node.hasRelationship(Direction.OUTGOING,
+            DynamicRelationshipType.withName("hasExpertise"))) {
+          System.out.println("Adding PERSON label to " + (String) node.getProperty("name"));
           node.addLabel(DynamicLabel.label("PERSON"));
         }
       }
@@ -46,7 +47,7 @@ public class GraphMutationExamples extends BaseTest {
       tx.success();
     }
   }
-  
+
   /***
    * Programmatically updating relationship properties.
    */
@@ -55,7 +56,9 @@ public class GraphMutationExamples extends BaseTest {
     System.out.println("********\n* Modify relationship properties \n********");
     try (Transaction tx = graphDb.beginTx()) {
       Node amarnath = nodeMap.get("Amarnath");
-      Relationship graduated = getOnlyElement(amarnath.getRelationships(DynamicRelationshipType.withName("graduatedFrom")));
+      Relationship graduated =
+          getOnlyElement(amarnath.getRelationships(DynamicRelationshipType
+              .withName("graduatedFrom")));
       graduated.setProperty("year", 1994);
       tx.success();
     }
