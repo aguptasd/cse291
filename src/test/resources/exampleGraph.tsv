@@ -1,0 +1,101 @@
+Univ. of California San Diego	locatedIn	La Jolla
+Maryann	bornIn	USA
+Maryann	worksFor	Univ. of California San Diego
+Maryann	hasDepartment	Neuroscience
+Maryann	designation	Professor
+Maryann	hasExpertise	Neuroscience
+Maryann	hasExpertise	Neuroinformatics
+Maryann	hasExpertise	Ontologies
+Maryann	hasExpertise	Neuroanatomy
+Maryann	teaches	NeuroAnatomy
+Maryann	leads	NIF
+NIF	hasDeveloped	SearchEngine
+NIF	hasDeveloped	Ontological Indexing
+NIF	hasDeveloped	Data Integration Platform
+NIF	uses	Solr
+NIF	uses	neo4j
+Solr	producedBy	Apache
+neo4j	producedBy	Neo Technologies
+neo4j	typeOf	Graph Data Management System
+Graph Data Management System	typeOf	DBMS
+Solr	typeOf	Indexing Engine
+Indexing Engine	typeOf	Information Systems
+NIF	uses	SciGraph
+Davis	bornIn	USA
+Davis	worksFor	Univ. of California San Diego
+Davis	hasExpertise	UI
+Davis	designation	Programmer
+Davis	hasDepartment	CRBS
+Davis	worksIn	NIF
+Davis	bornIn	USA
+Davis	supervisedBy	Jeff
+Jeff	coLeads	NIF
+Jeff	bornIn	USA
+Davis	graduatedFrom	Univ. of California San Diego
+ChrisC	worksFor	Univ. of California San Diego
+ChrisC	worksIn	NIF
+ChrisC	bornIn	USA
+ChrisC	designation	Programmer
+ChrisC	supervisedBy	Amarnath
+ChrisC	hasDeveloped	SciGraph
+ChrisC	hasExpertise	Java
+ChrisC	hasExpertise	DBMS
+DBMS	typeOf	Information Systems
+ChrisC	graduatedFrom	Univ. of California Berkeley
+Univ. of California Berkeley	locatedIn	Berkeley
+SciGraph	typeOf	Ontology Manager
+SciGraph	typeOf	Graph Application
+SciGraph	uses	neo4j
+Amarnath	bornIn	India
+Amarnath	worksFor	Univ. of California San Diego
+Amarnath	hasDepartment	SDSC
+Amarnath	designation	Research Scientist
+Amarnath	coLeads	NIF
+Amarnath	hasExpertise	Computer Science
+Amarnath	hasExpertise	Ontology
+Amarnath	hasExpertise	Data Integration
+Amarnath	hasExpertise	Information Systems
+Amarnath	hasExpertise	Query Processing
+Amarnath	hasExpertise	Biomedical Data Management
+Amarnath	leads	VarioDB
+Amarnath	teaches	Graph Data Management
+Amarnath	graduatedFrom	Jadavpur University
+Bill	worksFor	Univ. of California San Diego
+Bill	worksIn	NIF
+Bill	bornIn	USA
+Bill	designation	Programmer
+Bill	supervisedBy	Amarnath
+VarioDB	hasDeveloped	Genomic Data Platform
+VarioDB	uses	Vertica
+Vertica	typeOf	Data Management System
+Vertica	typeOf	Distributed Information System
+Distributed Information System	typeOf	Information Systems
+Data Management System	typeOf	Information Systems
+Vertica	producedBy	HP
+Yannis	bornIn	Greece
+Yannis	worksFor	Univ. of California San Diego
+Yannis	hasDepartment	Computer Science
+Yannis	designation	Professor
+Yannis	hasExpertise	Information Systems
+Yannis	hasExpertise	Web Applications
+Yannis	hasExpertise	Data Integration
+Yannis	hasExpertise	Model-based Information Systems
+Yannis	teaches	Data Management
+Yannis	hasExpertise	Query Processing
+Yannis	graduatedFrom	Stanford University
+Stanford University	locatedIn	Palo Alto
+Yannis	memberOf	CSE DB Group
+Amarnath	memberOf	CSE DB Group
+CSE DB Group	hasSpecialInterest	Information Systems
+Information Systems	subAreaOf	Computer Science
+Data Management	subAreaOf	Information Systems
+Data Integration	subAreaOf	Information Systems
+Model-based Information Systems	subAreaOf	Information Systems
+Graph Data Management	subAreaOf	Information Systems
+Query Processing	subAreaOf	Information Systems
+Ontology	applies	Description Logic
+Description Logic	typeOf	First Order Logic
+First Order Logic	subAreaOf	Computer Science
+Berkeley	locatedIn	California
+California	locatedIn	USA
+USA	typeOf	Country
